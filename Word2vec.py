@@ -40,6 +40,7 @@ sentence = nltk.sent_tokenize(text)
 
 sentence = [nltk.word_tokenize(sentence) for sentence in sentence]
 
+    sentence[i] = [word for word in sentence[i] if word not in stopwords.words('english')]
 
 
 
