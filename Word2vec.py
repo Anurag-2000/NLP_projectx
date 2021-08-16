@@ -39,8 +39,15 @@ text = re.sub(r'\s+', ' ', text)
 sentence = nltk.sent_tokenize(text)
 
 sentence = [nltk.word_tokenize(sentence) for sentence in sentence]
-
+for i in range(len(sentence)):
     sentence[i] = [word for word in sentence[i] if word not in stopwords.words('english')]
 
 
 
+model = Word2Vec(sentence,min_count=1)
+# words = model.wv.vocab
+
+vector = model.wv['war']
+print(vector)
+vector = model.wv.most_similar('war')
+print(vector)
