@@ -1,2 +1,2 @@
-# NLP_projectx
-## well blue is the red is the mughe nahi pata what the hell happened is the 
+# NLP_project
+## this series is basic to advance level of NLP small projects from Lemenisasion to transformers.
